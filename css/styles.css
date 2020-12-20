@@ -433,12 +433,10 @@ section p{
 	font-size: 2rem;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
-
 .card-container {
   display: flex;
   justify-content: center;
-  font-family: 'Baloo Paaji 2', cursive;
+  font-family: inherit;
   flex-wrap: wrap;
 }
 
@@ -458,7 +456,7 @@ section p{
 
 .card__name {
   margin-top: 15px;
-  font-size: 1.5em;
+  font-size: 1.2rem;
 }
 
 .card__image {
