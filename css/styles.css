@@ -72,8 +72,15 @@ section p{
 .heading{
 	font-size: 4rem;
 	text-align: center;
-	margin: 50px;
+	margin: 40px;
 	color:white;
+}
+
+@media (max-width: 420px){
+  	.heading{
+		font-size: 3rem;
+	}
+
 }
 
 /* NAVBAR */
@@ -89,6 +96,9 @@ section p{
 	 justify-content: space-between;
 	 min-height: 10vh;
 	 width: 100%;
+	 position: fixed;
+	 z-index: 1000;
+	
 }
  .header .navbar .logo {
 	 font-size: 2.4rem;
@@ -225,7 +235,7 @@ section p{
 	position: relative;
 	padding-top: 2rem;
 	margin-bottom: 4rem;
-	z-index: -1;
+	z-index: 0;
 }
 .services h1::after {
 	position: absolute;
@@ -247,13 +257,13 @@ section p{
 	text-align: center;
 	margin: 2.5rem 0;
 	padding: 0 1rem;
-	z-index: -1;
+	z-index: 0;
 }
 .services .container .service h2 {
 	margin: 1rem 0;
 }
 .services .container .service p {
-	opacity: 0.8;
+	opacity: 1;
 }
 
 
@@ -271,7 +281,7 @@ section p{
 		align-items: center;
 		justify-content: space-evenly;
 		transform: translateX(-100%);
-		z-index: 10;
+		z-index: 0;
    }
 	.navbar .hamburger-menu {
 		display: block;
@@ -280,7 +290,7 @@ section p{
 		transform: rotate(-45deg) translate(-9px, 6px);
    }
 	.navbar .bar-change .bar2 {
-		opacity: 0;
+		opacity: 1;
    }
 	.navbar .bar-change .bar3 {
 		transform: rotate(45deg) translate(-9px, -5px);
@@ -343,12 +353,6 @@ section p{
 	padding: 100px 0 100px;
 	min-height: 80vh;
 }
-.activity h2{
-	font-size: 4rem;
-	text-align: center;
-	margin: 50px;
-	color:white;
-}
 .activity p{
 	margin: 0 0 30px;
 }
@@ -396,7 +400,7 @@ section p{
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 30px;
-	margin-top: -80px;
+	margin-top: -40px;
 	height: 40px;
   }
   
@@ -420,12 +424,6 @@ section p{
   /* MEMBERS section */
 .members{
 	background-color:rgb(72, 72, 72);
-}
-
-.members h2{
-	font-size: 4rem;
-	text-align: center;
-	margin: 60px 0 50px;
 }
 
 .members .coordinators h3{
@@ -705,9 +703,9 @@ section p{
   width: 100%;
   margin:0;
   padding: 5px 0;
+  min-height: 800px;
 }
 .about .container-about {
-  width: 100%;
   padding:0;
   margin:0;
  }
@@ -724,7 +722,7 @@ section p{
 	margin:20px;
 	width: 50%;
 	min-width: 400px;
-	height: 120px;
+	height: 200px;
 	position: relative;
 	top:10px;
 	left: 10px;
@@ -740,13 +738,28 @@ section p{
 	transform: translateY(-50%);
 	
 }
+
+@media (max-width: 400px){
+
+	.img-wrapper {
+		margin:20px;
+		width: 50%;
+		min-width: 300px;
+		height: 150px;
+		position: relative;
+		top:10px;
+		left: 10px;
+		padding:20px
+	}
+}
 .text-wrapper{
   padding: 10px;
+  margin-top:20px;
+  
+  width: 70%;
 }
 
 .text {
   margin-bottom: 1em;
   font: 2rem;
 }
-
-
