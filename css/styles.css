@@ -567,7 +567,7 @@ section p{
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
   float: center;
 }
 .footer-links li
@@ -762,4 +762,7 @@ section p{
 .text {
   margin-bottom: 1em;
   font: 2rem;
+}
+.card{
+	padding: 16px;
 }
