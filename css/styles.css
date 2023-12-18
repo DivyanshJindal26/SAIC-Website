@@ -426,6 +426,13 @@ section p{
 	background-color:rgb(72, 72, 72);
 }
 
+
+.members .former h3{
+	font-size: 2rem;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
 .members .coordinators h3{
 	font-size: 2rem;
     text-align: center;
